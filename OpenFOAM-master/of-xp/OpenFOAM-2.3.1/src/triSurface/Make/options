@@ -1,0 +1,12 @@
+EXE_INC = \
+    -I$(LIB_SRC)/fileFormats/lnInclude \
+    -I$(LIB_SRC)/surfMesh/lnInclude \
+	 -I/home/dvaidhyn/Openfoam-mic/of-xp/zlib-1.2.8 \      
+        -I/home/dvaidhyn/Openfoam-mic/of-xp/flex-2.5.39       
+
+
+
+LIB_LIBS = \
+    -lfileFormats \
+    -lsurfMesh \
+	-L/home/dvaidhyn/Openfoam-mic/of-xp/flex-2.5.39/lib

@@ -1,0 +1,17 @@
+\initial {I}
+\entry {\code {INITIAL}}{22}
+\initial {Y}
+\entry {\code {YY_CURRENT_BUFFER}}{33}
+\entry {\code {YY_END_OF_BUFFER_CHAR}}{30}
+\entry {\code {YY_NUM_RULES}}{32}
+\entry {\code {YY_START}}{24, 33}
+\entry {\code {yyextra}}{58}
+\entry {\code {yyin}}{33}
+\entry {\code {yyleng}}{33}
+\entry {\code {yylloc}}{122}
+\entry {\code {YYLMAX}}{33}
+\entry {\code {yylval}}{122}
+\entry {\code {yylval, with yacc}}{34}
+\entry {\code {yyout}}{33}
+\entry {\code {yyscanner (reentrant only)}}{56}
+\entry {\code {yytext}}{14, 33}

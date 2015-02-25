@@ -1,0 +1,13 @@
+#CPP        = /lib/cpp -traditional-cpp $(GFLAGS)
+
+AR=x86_64-k1om-linux-ar
+RANLIB=x86_64-k1om-linux-ranlib
+CPP=/usr/linux-k1om-4.7/bin/x86_64-k1om-linux-cpp -traditional-cpp $(GFLAGS)
+LD=/usr/linux-k1om-4.7/bin/x86_64-k1om-linux-ld
+
+PROJECT_LIBS = -l$(WM_PROJECT) -ldl
+
+include $(GENERAL_RULES)/standard
+
+include $(RULES)/c
+include $(RULES)/c++

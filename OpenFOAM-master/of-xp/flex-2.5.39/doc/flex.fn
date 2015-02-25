@@ -1,0 +1,50 @@
+\entry{BEGIN}{22}{\code {BEGIN}}
+\entry{yy_push_state}{26}{\code {yy_push_state}}
+\entry{yy_pop_state}{26}{\code {yy_pop_state}}
+\entry{yy_top_state}{26}{\code {yy_top_state}}
+\entry{yy_create_buffer}{27}{\code {yy_create_buffer}}
+\entry{yy_switch_to_buffer}{27}{\code {yy_switch_to_buffer}}
+\entry{yy_delete_buffer}{27}{\code {yy_delete_buffer}}
+\entry{yypush_buffer_state}{27}{\code {yypush_buffer_state}}
+\entry{yypop_buffer_state}{27}{\code {yypop_buffer_state}}
+\entry{yy_flush_buffer}{27}{\code {yy_flush_buffer}}
+\entry{yy_new_buffer}{28}{\code {yy_new_buffer}}
+\entry{yy_scan_string}{30}{\code {yy_scan_string}}
+\entry{yy_scan_bytes}{30}{\code {yy_scan_bytes}}
+\entry{yy_scan_buffer}{30}{\code {yy_scan_buffer}}
+\entry{YY_NEW_FILE (now obsolete)}{31}{\code {YY_NEW_FILE (now obsolete)}}
+\entry{yy_set_interactive}{32}{\code {yy_set_interactive}}
+\entry{yy_set_bol}{32}{\code {yy_set_bol}}
+\entry{YY_AT_BOL}{32}{\code {YY_AT_BOL}}
+\entry{yyrestart}{33}{\code {yyrestart}}
+\entry{YYText (C++ only)}{50}{\code {YYText (C++ only)}}
+\entry{YYLeng (C++ only)}{50}{\code {YYLeng (C++ only)}}
+\entry{lineno (C++ only)}{50}{\code {lineno (C++ only)}}
+\entry{set_debug (C++ only)}{50}{\code {set_debug (C++ only)}}
+\entry{debug (C++ only)}{50}{\code {debug (C++ only)}}
+\entry{yyFlexLexer constructor (C++ only)}{50}{\code {yyFlexLexer constructor (C++ only)}}
+\entry{yylex (C++ version)}{50}{\code {yylex (C++ version)}}
+\entry{switch_streams (C++ only)}{51}{\code {switch_streams (C++ only)}}
+\entry{LexerInput (C++ only)}{51}{\code {LexerInput (C++ only)}}
+\entry{LexerOutput (C++ only)}{51}{\code {LexerOutput (C++ only)}}
+\entry{LexerError (C++ only)}{51}{\code {LexerError (C++ only)}}
+\entry{yylex_init}{56}{\code {yylex_init}}
+\entry{yylex_destroy}{56}{\code {yylex_destroy}}
+\entry{yyget_extra}{58}{\code {yyget_extra}}
+\entry{yyset_extra}{58}{\code {yyset_extra}}
+\entry{yyget_text}{59}{\code {yyget_text}}
+\entry{yyget_leng}{59}{\code {yyget_leng}}
+\entry{yyget_in}{59}{\code {yyget_in}}
+\entry{yyget_out}{59}{\code {yyget_out}}
+\entry{yyget_lineno}{59}{\code {yyget_lineno}}
+\entry{yyset_in}{59}{\code {yyset_in}}
+\entry{yyset_out}{59}{\code {yyset_out}}
+\entry{yyset_lineno}{59}{\code {yyset_lineno}}
+\entry{yyget_debug}{59}{\code {yyget_debug}}
+\entry{yyset_debug}{59}{\code {yyset_debug}}
+\entry{yyget_extra}{59}{\code {yyget_extra}}
+\entry{yyset_extra}{59}{\code {yyset_extra}}
+\entry{yytables_fload}{67}{\code {yytables_fload}}
+\entry{yytables_destroy}{68}{\code {yytables_destroy}}
+\entry{yylex (reentrant version)}{122}{\code {yylex (reentrant version)}}
+\entry{yylex (reentrant version)}{122}{\code {yylex (reentrant version)}}

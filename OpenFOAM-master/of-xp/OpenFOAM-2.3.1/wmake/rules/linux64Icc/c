@@ -1,0 +1,16 @@
+.SUFFIXES: .c .h
+
+cWARN        =
+
+cc          = icc
+
+include $(RULES)/c$(WM_COMPILE_OPTION)
+
+cFLAGS      = $(GFLAGS) $(cWARN) $(cOPT) $(cDBUG) $(LIB_HEADER_DIRS) -fPIC -O3 -mmic
+
+ctoo        = $(WM_SCHEDULER) $(cc) $(cFLAGS) -c $$SOURCE -o $@ 
+
+LINK_LIBS   = $(cDBUG) -L$(IA32ROOT)/lib -L$(ZLIB_ARCH_PATH) -L$(FLEX_ARCH_PATH) -L~/Openfoam-mic/of-xp/zlib-1.2.8/zlib.h -L/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/wmake/rules/linux64Icc/mplibINTELMPI -L/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/wmake/rules/linux64Icc/mplibHPMPI
+
+LINKLIBSO   = $(cc) $(cFLAGS) -shared -L$(ZLIB_ARCH_PATH) -L$(FLEX_ARCH_PATH)
+LINKEXE     = $(cc) $(cFLAGS) -Xlinker --add-needed -Xlinker -z -Xlinker nodefs -L$(ZLIB_ARCH_PATH) -L$(FLEX_ARCH_PATH) -L~/Openfoam-mic/of-xp/zlib-1.2.8/zlib.h

@@ -1,0 +1,62 @@
+malloc.o: malloc.c ../config.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/sys/types.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/features.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/sys/cdefs.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/wordsize.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/gnu/stubs.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/types.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/wordsize.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/typesizes.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/time.h \
+ /usr/linux-k1om-4.7/linux-k1om/../lib/gcc/x86_64-k1om-linux/4.7.0/include/stddef.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/endian.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/endian.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/byteswap.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/wordsize.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/sys/select.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/select.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/wordsize.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/sigset.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/time.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/time.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/sys/sysmacros.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/pthreadtypes.h \
+ /usr/linux-k1om-4.7/linux-k1om/usr/include/bits/wordsize.h
+
+../config.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/sys/types.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/features.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/sys/cdefs.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/wordsize.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/gnu/stubs.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/types.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/typesizes.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/time.h:
+
+/usr/linux-k1om-4.7/linux-k1om/../lib/gcc/x86_64-k1om-linux/4.7.0/include/stddef.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/endian.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/endian.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/byteswap.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/sys/select.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/select.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/sigset.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/time.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/sys/sysmacros.h:
+
+/usr/linux-k1om-4.7/linux-k1om/usr/include/bits/pthreadtypes.h:

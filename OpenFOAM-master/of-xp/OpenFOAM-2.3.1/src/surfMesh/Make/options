@@ -1,0 +1,12 @@
+EXE_INC = \
+    -I$(LIB_SRC)/fileFormats/lnInclude \
+	-I/home/dvaidhyn/Openfoam-mic/of-xp/zlib-1.2.8/zconf.h \
+	-I/usr/bin/flex \
+	-I/home/dvaidhyn/Openfoam-mic/of-xp/zlib-1.2.8 \
+	-I/home/dvaidhyn/Openfoam-mic/of-xp/flex-2.5.39
+
+LIB_LIBS = \
+    -lfileFormats \
+	-L/home/dvaidhyn/Openfoam-mic/of-xp/zlib-1.2.8/zconf.h \
+	-L/home/dvaidhyn/Openfoam-mic/of-xp/zlib-1.2.8/zlib.h \
+	-L/home/dvaidhyn/Openfoam-mic/of-xp/flex-2.5.39/FlexLexer.h

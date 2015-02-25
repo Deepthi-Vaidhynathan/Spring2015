@@ -1,0 +1,172 @@
+@numchapentry{Copyright}{1}{Copyright}{1}
+@numchapentry{Reporting Bugs}{2}{Reporting Bugs}{2}
+@numchapentry{Introduction}{3}{Introduction}{3}
+@numchapentry{Some Simple Examples}{4}{Simple Examples}{4}
+@numchapentry{Format of the Input File}{5}{Format}{6}
+@numsecentry{Format of the Definitions Section}{5.1}{Definitions Section}{6}
+@numsecentry{Format of the Rules Section}{5.2}{Rules Section}{7}
+@numsecentry{Format of the User Code Section}{5.3}{User Code Section}{7}
+@numsecentry{Comments in the Input}{5.4}{Comments in the Input}{7}
+@numchapentry{Patterns}{6}{Patterns}{9}
+@numchapentry{How the Input Is Matched}{7}{Matching}{14}
+@numchapentry{Actions}{8}{Actions}{15}
+@numchapentry{The Generated Scanner}{9}{Generated Scanner}{19}
+@numchapentry{Start Conditions}{10}{Start Conditions}{21}
+@numchapentry{Multiple Input Buffers}{11}{Multiple Input Buffers}{27}
+@numchapentry{End-of-File Rules}{12}{EOF}{31}
+@numchapentry{Miscellaneous Macros}{13}{Misc Macros}{32}
+@numchapentry{Values Available To the User}{14}{User Values}{33}
+@numchapentry{Interfacing with Yacc}{15}{Yacc}{34}
+@numchapentry{Scanner Options}{16}{Scanner Options}{35}
+@numsecentry{Options for Specifying Filenames}{16.1}{Options for Specifying Filenames}{35}
+@numsecentry{Options Affecting Scanner Behavior}{16.2}{Options Affecting Scanner Behavior}{36}
+@numsecentry{Code-Level And API Options}{16.3}{Code-Level And API Options}{39}
+@numsecentry{Options for Scanner Speed and Size}{16.4}{Options for Scanner Speed and Size}{41}
+@numsecentry{Debugging Options}{16.5}{Debugging Options}{43}
+@numsecentry{Miscellaneous Options}{16.6}{Miscellaneous Options}{44}
+@numchapentry{Performance Considerations}{17}{Performance}{45}
+@numchapentry{Generating C++ Scanners}{18}{Cxx}{50}
+@numchapentry{Reentrant C Scanners}{19}{Reentrant}{54}
+@numsecentry{Uses for Reentrant Scanners}{19.1}{Reentrant Uses}{54}
+@numsecentry{An Overview of the Reentrant API}{19.2}{Reentrant Overview}{55}
+@numsecentry{Reentrant Example}{19.3}{Reentrant Example}{55}
+@numsecentry{The Reentrant API in Detail}{19.4}{Reentrant Detail}{56}
+@numsubsecentry{Declaring a Scanner As Reentrant}{19.4.1}{Specify Reentrant}{56}
+@numsubsecentry{The Extra Argument}{19.4.2}{Extra Reentrant Argument}{56}
+@numsubsecentry{Global Variables Replaced By Macros}{19.4.3}{Global Replacement}{56}
+@numsubsecentry{Init and Destroy Functions}{19.4.4}{Init and Destroy Functions}{56}
+@numsubsecentry{Accessing Variables with Reentrant Scanners}{19.4.5}{Accessor Methods}{57}
+@numsubsecentry{Extra Data}{19.4.6}{Extra Data}{58}
+@numsubsecentry{About yyscan_t}{19.4.7}{About yyscan_t}{59}
+@numsecentry{Functions and Macros Available in Reentrant C Scanners}{19.5}{Reentrant Functions}{59}
+@numchapentry{Incompatibilities with Lex and Posix}{20}{Lex and Posix}{61}
+@numchapentry{Memory Management}{21}{Memory Management}{64}
+@numsecentry{The Default Memory Management}{21.1}{The Default Memory Management}{64}
+@numsecentry{Overriding The Default Memory Management}{21.2}{Overriding The Default Memory Management}{65}
+@numsecentry{A Note About yytext And Memory}{21.3}{A Note About yytext And Memory}{66}
+@numchapentry{Serialized Tables}{22}{Serialized Tables}{67}
+@numsecentry{Creating Serialized Tables}{22.1}{Creating Serialized Tables}{67}
+@numsecentry{Loading and Unloading Serialized Tables}{22.2}{Loading and Unloading Serialized Tables}{67}
+@numsecentry{Tables File Format}{22.3}{Tables File Format}{68}
+@numchapentry{Diagnostics}{23}{Diagnostics}{72}
+@numchapentry{Limitations}{24}{Limitations}{74}
+@numchapentry{Additional Reading}{25}{Bibliography}{75}
+@unnchapentry{FAQ}{10001}{FAQ}{76}
+@unnsecentry{When was flex born?}{10001.1}{When was flex born?}{76}
+@unnsecentry{How do I expand backslash-escape sequences in C-style quoted strings?}{10001.2}{How do I expand backslash-escape sequences in C-style quoted strings?}{76}
+@unnsecentry{Why do flex scanners call fileno if it is not ANSI compatible?}{10001.3}{Why do flex scanners call fileno if it is not ANSI compatible?}{76}
+@unnsecentry{Does flex support recursive pattern definitions?}{10001.4}{Does flex support recursive pattern definitions?}{76}
+@unnsecentry{How do I skip huge chunks of input (tens of megabytes) while using flex?}{10001.5}{How do I skip huge chunks of input (tens of megabytes) while using flex?}{77}
+@unnsecentry{Flex is not matching my patterns in the same order that I defined them.}{10001.6}{Flex is not matching my patterns in the same order that I defined them.}{77}
+@unnsecentry{My actions are executing out of order or sometimes not at all.}{10001.7}{My actions are executing out of order or sometimes not at all.}{77}
+@unnsecentry{How can I have multiple input sources feed into the same scanner at the same time?}{10001.8}{How can I have multiple input sources feed into the same scanner at the same time?}{77}
+@unnsecentry{Can I build nested parsers that work with the same input file?}{10001.9}{Can I build nested parsers that work with the same input file?}{78}
+@unnsecentry{How can I match text only at the end of a file?}{10001.10}{How can I match text only at the end of a file?}{78}
+@unnsecentry{How can I make REJECT cascade across start condition boundaries?}{10001.11}{How can I make REJECT cascade across start condition boundaries?}{78}
+@unnsecentry{Why can't I use fast or full tables with interactive mode?}{10001.12}{Why cant I use fast or full tables with interactive mode?}{79}
+@unnsecentry{How much faster is -F or -f than -C?}{10001.13}{How much faster is -F or -f than -C?}{79}
+@unnsecentry{If I have a simple grammar can't I just parse it with flex?}{10001.14}{If I have a simple grammar cant I just parse it with flex?}{79}
+@unnsecentry{Why doesn't yyrestart() set the start state back to INITIAL?}{10001.15}{Why doesn't yyrestart() set the start state back to INITIAL?}{79}
+@unnsecentry{How can I match C-style comments?}{10001.16}{How can I match C-style comments?}{79}
+@unnsecentry{The '.' isn't working the way I expected.}{10001.17}{The period isn't working the way I expected.}{80}
+@unnsecentry{Can I get the flex manual in another format?}{10001.18}{Can I get the flex manual in another format?}{80}
+@unnsecentry{Does there exist a "faster" NDFA->DFA algorithm?}{10001.19}{Does there exist a "faster" NDFA->DFA algorithm?}{80}
+@unnsecentry{How does flex compile the DFA so quickly?}{10001.20}{How does flex compile the DFA so quickly?}{80}
+@unnsecentry{How can I use more than 8192 rules?}{10001.21}{How can I use more than 8192 rules?}{81}
+@unnsecentry{How do I abandon a file in the middle of a scan and switch to a new file?}{10001.22}{How do I abandon a file in the middle of a scan and switch to a new file?}{81}
+@unnsecentry{How do I execute code only during initialization (only before the first scan)?}{10001.23}{How do I execute code only during initialization (only before the first scan)?}{81}
+@unnsecentry{How do I execute code at termination?}{10001.24}{How do I execute code at termination?}{82}
+@unnsecentry{Where else can I find help?}{10001.25}{Where else can I find help?}{82}
+@unnsecentry{Can I include comments in the "rules" section of the file?}{10001.26}{Can I include comments in the "rules" section of the file?}{82}
+@unnsecentry{I get an error about undefined yywrap().}{10001.27}{I get an error about undefined yywrap().}{82}
+@unnsecentry{How can I change the matching pattern at run time?}{10001.28}{How can I change the matching pattern at run time?}{82}
+@unnsecentry{How can I expand macros in the input?}{10001.29}{How can I expand macros in the input?}{82}
+@unnsecentry{How can I build a two-pass scanner?}{10001.30}{How can I build a two-pass scanner?}{83}
+@unnsecentry{How do I match any string not matched in the preceding rules?}{10001.31}{How do I match any string not matched in the preceding rules?}{83}
+@unnsecentry{I am trying to port code from AT&T lex that uses yysptr and yysbuf.}{10001.32}{I am trying to port code from AT&T lex that uses yysptr and yysbuf.}{83}
+@unnsecentry{Is there a way to make flex treat NULL like a regular character?}{10001.33}{Is there a way to make flex treat NULL like a regular character?}{83}
+@unnsecentry{Whenever flex can not match the input it says "flex scanner jammed".}{10001.34}{Whenever flex can not match the input it says "flex scanner jammed".}{84}
+@unnsecentry{Why doesn't flex have non-greedy operators like perl does?}{10001.35}{Why doesn't flex have non-greedy operators like perl does?}{84}
+@unnsecentry{Memory leak - 16386 bytes allocated by malloc.}{10001.36}{Memory leak - 16386 bytes allocated by malloc.}{84}
+@unnsecentry{How do I track the byte offset for lseek()?}{10001.37}{How do I track the byte offset for lseek()?}{85}
+@unnsecentry{How do I use my own I/O classes in a C++ scanner?}{10001.38}{How do I use my own I/O classes in a C++ scanner?}{85}
+@unnsecentry{How do I skip as many chars as possible?}{10001.39}{How do I skip as many chars as possible?}{85}
+@unnsecentry{deleteme00}{10001.40}{deleteme00}{86}
+@unnsecentry{Are certain equivalent patterns faster than others?}{10001.41}{Are certain equivalent patterns faster than others?}{86}
+@unnsecentry{Is backing up a big deal?}{10001.42}{Is backing up a big deal?}{87}
+@unnsecentry{Can I fake multi-byte character support?}{10001.43}{Can I fake multi-byte character support?}{88}
+@unnsecentry{deleteme01}{10001.44}{deleteme01}{89}
+@unnsecentry{Can you discuss some flex internals?}{10001.45}{Can you discuss some flex internals?}{90}
+@unnsecentry{unput() messes up yy_at_bol}{10001.46}{unput() messes up yy_at_bol}{91}
+@unnsecentry{The | operator is not doing what I want}{10001.47}{The | operator is not doing what I want}{91}
+@unnsecentry{Why can't flex understand this variable trailing context pattern?}{10001.48}{Why can't flex understand this variable trailing context pattern?}{92}
+@unnsecentry{The ^ operator isn't working}{10001.49}{The ^ operator isn't working}{93}
+@unnsecentry{Trailing context is getting confused with trailing optional patterns}{10001.50}{Trailing context is getting confused with trailing optional patterns}{93}
+@unnsecentry{Is flex GNU or not?}{10001.51}{Is flex GNU or not?}{94}
+@unnsecentry{ERASEME53}{10001.52}{ERASEME53}{95}
+@unnsecentry{I need to scan if-then-else blocks and while loops}{10001.53}{I need to scan if-then-else blocks and while loops}{95}
+@unnsecentry{ERASEME55}{10001.54}{ERASEME55}{95}
+@unnsecentry{ERASEME56}{10001.55}{ERASEME56}{96}
+@unnsecentry{ERASEME57}{10001.56}{ERASEME57}{97}
+@unnsecentry{Is there a repository for flex scanners?}{10001.57}{Is there a repository for flex scanners?}{97}
+@unnsecentry{How can I conditionally compile or preprocess my flex input file?}{10001.58}{How can I conditionally compile or preprocess my flex input file?}{97}
+@unnsecentry{Where can I find grammars for lex and yacc?}{10001.59}{Where can I find grammars for lex and yacc?}{97}
+@unnsecentry{I get an end-of-buffer message for each character scanned.}{10001.60}{I get an end-of-buffer message for each character scanned.}{98}
+@unnsecentry{unnamed-faq-62}{10001.61}{unnamed-faq-62}{98}
+@unnsecentry{unnamed-faq-63}{10001.62}{unnamed-faq-63}{98}
+@unnsecentry{unnamed-faq-64}{10001.63}{unnamed-faq-64}{99}
+@unnsecentry{unnamed-faq-65}{10001.64}{unnamed-faq-65}{99}
+@unnsecentry{unnamed-faq-66}{10001.65}{unnamed-faq-66}{100}
+@unnsecentry{unnamed-faq-67}{10001.66}{unnamed-faq-67}{100}
+@unnsecentry{unnamed-faq-68}{10001.67}{unnamed-faq-68}{101}
+@unnsecentry{unnamed-faq-69}{10001.68}{unnamed-faq-69}{101}
+@unnsecentry{unnamed-faq-70}{10001.69}{unnamed-faq-70}{102}
+@unnsecentry{unnamed-faq-71}{10001.70}{unnamed-faq-71}{102}
+@unnsecentry{unnamed-faq-72}{10001.71}{unnamed-faq-72}{103}
+@unnsecentry{unnamed-faq-73}{10001.72}{unnamed-faq-73}{103}
+@unnsecentry{unnamed-faq-74}{10001.73}{unnamed-faq-74}{104}
+@unnsecentry{unnamed-faq-75}{10001.74}{unnamed-faq-75}{104}
+@unnsecentry{unnamed-faq-76}{10001.75}{unnamed-faq-76}{105}
+@unnsecentry{unnamed-faq-77}{10001.76}{unnamed-faq-77}{105}
+@unnsecentry{unnamed-faq-78}{10001.77}{unnamed-faq-78}{106}
+@unnsecentry{unnamed-faq-79}{10001.78}{unnamed-faq-79}{106}
+@unnsecentry{unnamed-faq-80}{10001.79}{unnamed-faq-80}{107}
+@unnsecentry{unnamed-faq-81}{10001.80}{unnamed-faq-81}{108}
+@unnsecentry{unnamed-faq-82}{10001.81}{unnamed-faq-82}{109}
+@unnsecentry{unnamed-faq-83}{10001.82}{unnamed-faq-83}{109}
+@unnsecentry{unnamed-faq-84}{10001.83}{unnamed-faq-84}{110}
+@unnsecentry{unnamed-faq-85}{10001.84}{unnamed-faq-85}{111}
+@unnsecentry{unnamed-faq-86}{10001.85}{unnamed-faq-86}{111}
+@unnsecentry{unnamed-faq-87}{10001.86}{unnamed-faq-87}{112}
+@unnsecentry{unnamed-faq-88}{10001.87}{unnamed-faq-88}{112}
+@unnsecentry{unnamed-faq-90}{10001.88}{unnamed-faq-90}{113}
+@unnsecentry{unnamed-faq-91}{10001.89}{unnamed-faq-91}{113}
+@unnsecentry{unnamed-faq-92}{10001.90}{unnamed-faq-92}{115}
+@unnsecentry{unnamed-faq-93}{10001.91}{unnamed-faq-93}{115}
+@unnsecentry{unnamed-faq-94}{10001.92}{unnamed-faq-94}{115}
+@unnsecentry{unnamed-faq-95}{10001.93}{unnamed-faq-95}{116}
+@unnsecentry{unnamed-faq-96}{10001.94}{unnamed-faq-96}{117}
+@unnsecentry{unnamed-faq-97}{10001.95}{unnamed-faq-97}{117}
+@unnsecentry{unnamed-faq-98}{10001.96}{unnamed-faq-98}{118}
+@unnsecentry{unnamed-faq-99}{10001.97}{unnamed-faq-99}{118}
+@unnsecentry{unnamed-faq-100}{10001.98}{unnamed-faq-100}{119}
+@unnsecentry{unnamed-faq-101}{10001.99}{unnamed-faq-101}{119}
+@unnsecentry{What is the difference between YYLEX_PARAM and YY_DECL?}{10001.100}{What is the difference between YYLEX_PARAM and YY_DECL?}{120}
+@unnsecentry{Why do I get "conflicting types for yylex" error?}{10001.101}{Why do I get "conflicting types for yylex" error?}{120}
+@unnsecentry{How do I access the values set in a Flex action from within a Bison action?}{10001.102}{How do I access the values set in a Flex action from within a Bison action?}{120}
+@appentry{Appendices}{A}{Appendices}{121}
+@appsecentry{Makefiles and Flex}{A.1}{Makefiles and Flex}{121}
+@appsecentry{C Scanners with Bison Parsers}{A.2}{Bison Bridge}{122}
+@appsecentry{M4 Dependency}{A.3}{M4 Dependency}{124}
+@appsecentry{Common Patterns}{A.4}{Common Patterns}{124}
+@appsubsecentry{Numbers}{A.4.1}{Numbers}{124}
+@appsubsecentry{Identifiers}{A.4.2}{Identifiers}{125}
+@appsubsecentry{Quoted Constructs}{A.4.3}{Quoted Constructs}{125}
+@appsubsecentry{Addresses}{A.4.4}{Addresses}{125}
+@unnchapentry{Indices}{10002}{Indices}{127}
+@unnsecentry{Concept Index}{10002.1}{Concept Index}{127}
+@unnsecentry{Index of Functions and Macros}{10002.2}{Index of Functions and Macros}{131}
+@unnsecentry{Index of Variables}{10002.3}{Index of Variables}{131}
+@unnsecentry{Index of Data Types}{10002.4}{Index of Data Types}{132}
+@unnsecentry{Index of Hooks}{10002.5}{Index of Hooks}{132}
+@unnsecentry{Index of Scanner Options}{10002.6}{Index of Scanner Options}{132}

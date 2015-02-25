@@ -1,0 +1,180 @@
++ wmakePrintBuild -check
+same version as previous build
++ wmakeLnInclude OpenFOAM
++ wmakeLnInclude OSspecific/POSIX
++ Pstream/Allwmake
++ wmake libso dummy
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/dummy/libPstream.so' is up to date.
++ case "$WM_MPLIB" in
++ set +x
+
+Note: ignore spurious warnings about missing mpicxx.h headers
+
+wmake libso mpi
+'libNULL.so' is up to date.
++ OSspecific/POSIX/Allwmake
+Found <sys/inotify.h>  --  enabling inotify for file monitoring.
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libOSspecific.o' is up to date.
++ wmake libso OpenFOAM
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libOpenFOAM.so' is up to date.
++ wmake libso fileFormats
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libfileFormats.so' is up to date.
++ wmake libso surfMesh
+SOURCE=surfaceFormats/stl/STLsurfaceFormatASCII.L ; flex -+ -oMake/linux64IccDPDebug/STLsurfaceFormatASCII.C -f $SOURCE ; icpc -std=c++0x -Dlinux64 -DWM_DP -wd327,525,654,819,1125,1476,1505,1572  -g -DFULLDEBUG -O0 -DNoRepository -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/fileFormats/lnInclude 	-I/home/dvaidhyn/Openfoam-mic/of-xp/zlib-1.2.8/zconf.hv	-I/usr/bin/flex -IlnInclude -I. -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/OpenFOAM/lnInclude -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/OSspecific/POSIX/lnInclude   -fPIC -O3 -mmic -c Make/linux64IccDPDebug/STLsurfaceFormatASCII.C -o Make/linux64IccDPDebug/STLsurfaceFormatASCII.o
+Make/linux64IccDPDebug/STLsurfaceFormatASCII.C(312): catastrophic error: cannot open source file "FlexLexer.h"
+  #include <FlexLexer.h>
+                        ^
+
+compilation aborted for Make/linux64IccDPDebug/STLsurfaceFormatASCII.C (code 4)
+make: *** [Make/linux64IccDPDebug/STLsurfaceFormatASCII.o] Error 4
++ wmake libso triSurface
+SOURCE=triSurface/interfaces/STL/readSTLASCII.L ; flex -+ -oMake/linux64IccDPDebug/readSTLASCII.C -f $SOURCE ; icpc -std=c++0x -Dlinux64 -DWM_DP -wd327,525,654,819,1125,1476,1505,1572  -g -DFULLDEBUG -O0 -DNoRepository -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/fileFormats/lnInclude -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/surfMesh/lnInclude -IlnInclude -I. -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/OpenFOAM/lnInclude -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/OSspecific/POSIX/lnInclude   -fPIC -O3 -mmic -c Make/linux64IccDPDebug/readSTLASCII.C -o Make/linux64IccDPDebug/readSTLASCII.o
+Make/linux64IccDPDebug/readSTLASCII.C(312): catastrophic error: cannot open source file "FlexLexer.h"
+  #include <FlexLexer.h>
+                        ^
+
+compilation aborted for Make/linux64IccDPDebug/readSTLASCII.C (code 4)
+make: *** [Make/linux64IccDPDebug/readSTLASCII.o] Error 4
++ wmake libso meshTools
+x86_64-k1om-linux-ld: cannot find -ltriSurface
+x86_64-k1om-linux-ld: cannot find -lsurfMesh
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libmeshTools.so] Error 1
++ wmake libso edgeMesh
+x86_64-k1om-linux-ld: cannot find -ltriSurface
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+x86_64-k1om-linux-ld: cannot find -lsurfMesh
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libedgeMesh.so] Error 1
++ parallel/decompose/AllwmakeLnInclude
++ wmakeLnInclude decompositionMethods
++ wmakeLnInclude metisDecomp
++ wmakeLnInclude scotchDecomp
++ wmakeLnInclude ptscotchDecomp
++ dummyThirdParty/Allwmake
++ wmake libso scotchDecomp
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/dummy/libscotchDecomp.so' is up to date.
++ wmake libso ptscotchDecomp
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/dummy/libptscotchDecomp.so' is up to date.
++ wmake libso metisDecomp
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/dummy/libmetisDecomp.so' is up to date.
++ wmake libso MGridGen
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/dummy/libMGridGen.so' is up to date.
++ wmake libso finiteVolume
+x86_64-k1om-linux-ld: cannot find -ltriSurface
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libfiniteVolume.so] Error 1
++ wmake libso lagrangian/basic
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/liblagrangian.so] Error 1
++ wmake libso lagrangian/distributionModels
+'/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libdistributionModels.so' is up to date.
++ wmake libso genericPatchFields
+x86_64-k1om-linux-ld: cannot find -lfiniteVolume
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libgenericPatchFields.so] Error 1
++ parallel/Allwmake
++ decompose/Allwmake
+using SCOTCH_ARCH_PATH=/home/dvaidhyn/Openfoam-mic/of-xp/ThirdParty-2.3.1/platforms/linux64Icc/scotch_6.0.0
++ wmakeLnInclude decompositionMethods
++ '[' -n /home/dvaidhyn/Openfoam-mic/of-xp/ThirdParty-2.3.1/platforms/linux64Icc/scotch_6.0.0 ']'
++ wmake libso scotchDecomp
+x86_64-k1om-linux-ld: skipping incompatible /home/dvaidhyn/Openfoam-mic/of-xp/ThirdParty-2.3.1/platforms/linux64IccDPDebug/lib/libscotch.so when searching for -lscotch
+x86_64-k1om-linux-ld: cannot find -lscotch
+x86_64-k1om-linux-ld: skipping incompatible /home/dvaidhyn/Openfoam-mic/of-xp/ThirdParty-2.3.1/platforms/linux64IccDPDebug/lib/libscotcherrexit.so when searching for -lscotcherrexit
+x86_64-k1om-linux-ld: cannot find -lscotcherrexit
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libscotchDecomp.so] Error 1
++ '[' -d /home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/mic ']'
++ cd metisDecomp
++ ./Allwmake libso
+using METIS_ARCH_PATH=/home/dvaidhyn/Openfoam-mic/of-xp/ThirdParty-2.3.1/platforms/linux64Icc/metis-5.1.0
++ wmake libso decompositionMethods
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+x86_64-k1om-linux-ld: cannot find -lfiniteVolume
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libdecompositionMethods.so] Error 1
++ wmake libso decompose
+x86_64-k1om-linux-ld: cannot find -lfiniteVolume
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+x86_64-k1om-linux-ld: cannot find -llagrangian
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libdecompose.so] Error 1
++ reconstruct/Allwmake
++ wmake libso reconstruct
+x86_64-k1om-linux-ld: cannot find -lfiniteVolume
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+x86_64-k1om-linux-ld: cannot find -llagrangian
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libreconstruct.so] Error 1
++ wmake libso distributed
+x86_64-k1om-linux-ld: cannot find -ltriSurface
+x86_64-k1om-linux-ld: cannot find -ldecompositionMethods
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libdistributed.so] Error 1
++ renumber/Allwmake
++ wmake libso renumberMethods
+x86_64-k1om-linux-ld: cannot find -ldecompositionMethods
+x86_64-k1om-linux-ld: cannot find -lfiniteVolume
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/librenumberMethods.so] Error 1
++ '[' -n /home/dvaidhyn/Openfoam-mic/of-xp/ThirdParty-2.3.1/platforms/linux64Icc/boost-system ']'
++ wmake libso SloanRenumber
+SOURCE=SloanRenumber.C ;  icpc -std=c++0x -Dlinux64 -DWM_DP -wd327,525,654,819,1125,1476,1505,1572  -g -DFULLDEBUG -O0 -DNoRepository -I/home/dvaidhyn/Openfoam-mic/of-xp/ThirdParty-2.3.1/platforms/linux64Icc/boost-system/include -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/meshTools/lnInclude -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/parallel/decompose/decompositionMethods/lnInclude -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/renumber/renumberMethods/lnInclude -IlnInclude -I. -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/OpenFOAM/lnInclude -I/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/src/OSspecific/POSIX/lnInclude   -fPIC -O3 -mmic -c $SOURCE -o Make/linux64IccDPDebug/SloanRenumber.o
+SloanRenumber.C(34): catastrophic error: cannot open source file "boost/config.hpp"
+  #include <boost/config.hpp>
+                             ^
+
+compilation aborted for SloanRenumber.C (code 4)
+make: *** [Make/linux64IccDPDebug/SloanRenumber.o] Error 4
++ '[' -n '' ']'
++ echo
+
++ echo 'Skipping zoltanRenumber'
+Skipping zoltanRenumber
++ echo
+
++ wmake libso conversion
+x86_64-k1om-linux-ld: cannot find -lfiniteVolume
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libconversion.so] Error 1
++ wmake libso sampling
+x86_64-k1om-linux-ld: cannot find -lfiniteVolume
+x86_64-k1om-linux-ld: cannot find -lmeshTools
+x86_64-k1om-linux-ld: cannot find -lsurfMesh
+x86_64-k1om-linux-ld: cannot find -ltriSurface
+x86_64-k1om-linux-ld: cannot find -llagrangian
+x86_64-k1om-linux-ld: cannot find -lconversion
+make: *** [/home/dvaidhyn/Openfoam-mic/of-xp/OpenFOAM-2.3.1/platforms/linux64IccDPDebug/lib/libsampling.so] Error 1
++ wmake libso mesh/extrudeModel
+'libNULL.so' is up to date.
++ wmake libso dynamicMesh
+'libNULL.so' is up to date.
++ wmake libso dynamicFvMesh
+'libNULL.so' is up to date.
++ wmake libso topoChangerFvMesh
+'libNULL.so' is up to date.
++ wmake libso ODE
+'libNULL.so' is up to date.
++ wmake libso randomProcesses
+'libNULL.so' is up to date.
++ thermophysicalModels/Allwmake
++ wmake libso specie
+'libNULL.so' is up to date.
++ wmake libso solidSpecie
+'libNULL.so' is up to date.
++ wmake libso thermophysicalFunctions
+'libNULL.so' is up to date.
++ ./properties/Allwmake
++ wmake libso liquidProperties
+'libNULL.so' is up to date.
++ wmake libso liquidMixtureProperties
+'libNULL.so' is up to date.
++ wmake libso solidProperties
+'libNULL.so' is up to date.
++ wmake libso solidMixtureProperties
+'libNULL.so' is up to date.
++ wmake libso basic
+'libNULL.so' is up to date.
++ wmake libso reactionThermo
+'libNULL.so' is up to date.
++ wmake libso laminarFlameSpeed
+'libNULL.so' is up to date.
++ wmake libso chemistryModel
+'libNULL.so' is up to date.
++ wmake libso barotropicCompressibilityModel
+'libNULL.so' is up to date.
++ wmake libso SLGThermo

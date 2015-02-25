@@ -1,0 +1,1 @@
+../tests/test-c++-multiple-scanners/main.cpp

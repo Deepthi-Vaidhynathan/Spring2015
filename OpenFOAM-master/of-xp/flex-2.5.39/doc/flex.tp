@@ -1,0 +1,8 @@
+\entry{YY_BUFFER_STATE}{27}{\code {YY_BUFFER_STATE}}
+\entry{yy_size_t}{30}{\code {yy_size_t}}
+\entry{yyFlexLexer (C++ only)}{50}{\code {yyFlexLexer (C++ only)}}
+\entry{FlexLexer (C++ only)}{50}{\code {FlexLexer (C++ only)}}
+\entry{YY_EXTRA_TYPE (reentrant only)}{58}{\code {YY_EXTRA_TYPE (reentrant only)}}
+\entry{yyscan_t (reentrant only)}{59}{\code {yyscan_t (reentrant only)}}
+\entry{YYLTYPE}{122}{\code {YYLTYPE}}
+\entry{YYSTYPE}{122}{\code {YYSTYPE}}

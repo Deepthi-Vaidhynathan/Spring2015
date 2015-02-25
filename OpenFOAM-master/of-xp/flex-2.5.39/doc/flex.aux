@@ -1,0 +1,663 @@
+@xrdef{Copyright-title}{Copyright}
+@xrdef{Copyright-snt}{Chapter@tie 1}
+@xrdef{Copyright-pg}{1}
+@xrdef{Reporting Bugs-title}{Reporting Bugs}
+@xrdef{Reporting Bugs-snt}{Chapter@tie 2}
+@xrdef{Reporting Bugs-pg}{2}
+@xrdef{Introduction-title}{Introduction}
+@xrdef{Introduction-snt}{Chapter@tie 3}
+@xrdef{Introduction-pg}{3}
+@xrdef{Simple Examples-title}{Some Simple Examples}
+@xrdef{Simple Examples-snt}{Chapter@tie 4}
+@xrdef{Simple Examples-pg}{4}
+@xrdef{Format-title}{Format of the Input File}
+@xrdef{Format-snt}{Chapter@tie 5}
+@xrdef{Definitions Section-title}{Format of the Definitions Section}
+@xrdef{Definitions Section-snt}{Section@tie 5.1}
+@xrdef{Format-pg}{6}
+@xrdef{Definitions Section-pg}{6}
+@xrdef{Rules Section-title}{Format of the Rules Section}
+@xrdef{Rules Section-snt}{Section@tie 5.2}
+@xrdef{User Code Section-title}{Format of the User Code Section}
+@xrdef{User Code Section-snt}{Section@tie 5.3}
+@xrdef{Comments in the Input-title}{Comments in the Input}
+@xrdef{Comments in the Input-snt}{Section@tie 5.4}
+@xrdef{Rules Section-pg}{7}
+@xrdef{User Code Section-pg}{7}
+@xrdef{Comments in the Input-pg}{7}
+@xrdef{Patterns-title}{Patterns}
+@xrdef{Patterns-snt}{Chapter@tie 6}
+@xrdef{Patterns-pg}{9}
+@xrdef{case and character ranges-title}{Patterns}
+@xrdef{case and character ranges-snt}{}
+@xrdef{case and character ranges-pg}{12}
+@xrdef{Matching-title}{How the Input Is Matched}
+@xrdef{Matching-snt}{Chapter@tie 7}
+@xrdef{Matching-pg}{14}
+@xrdef{Actions-title}{Actions}
+@xrdef{Actions-snt}{Chapter@tie 8}
+@xrdef{Actions-pg}{15}
+@xrdef{Generated Scanner-title}{The Generated Scanner}
+@xrdef{Generated Scanner-snt}{Chapter@tie 9}
+@xrdef{Generated Scanner-pg}{19}
+@xrdef{Start Conditions-title}{Start Conditions}
+@xrdef{Start Conditions-snt}{Chapter@tie 10}
+@xrdef{Start Conditions-pg}{21}
+@xrdef{Multiple Input Buffers-title}{Multiple Input Buffers}
+@xrdef{Multiple Input Buffers-snt}{Chapter@tie 11}
+@xrdef{Multiple Input Buffers-pg}{27}
+@xrdef{Scanning Strings-title}{Multiple Input Buffers}
+@xrdef{Scanning Strings-snt}{}
+@xrdef{Scanning Strings-pg}{30}
+@xrdef{EOF-title}{End-of-File Rules}
+@xrdef{EOF-snt}{Chapter@tie 12}
+@xrdef{EOF-pg}{31}
+@xrdef{Misc Macros-title}{Miscellaneous Macros}
+@xrdef{Misc Macros-snt}{Chapter@tie 13}
+@xrdef{Misc Macros-pg}{32}
+@xrdef{User Values-title}{Values Available To the User}
+@xrdef{User Values-snt}{Chapter@tie 14}
+@xrdef{User Values-pg}{33}
+@xrdef{Yacc-title}{Interfacing with Yacc}
+@xrdef{Yacc-snt}{Chapter@tie 15}
+@xrdef{Yacc-pg}{34}
+@xrdef{Scanner Options-title}{Scanner Options}
+@xrdef{Scanner Options-snt}{Chapter@tie 16}
+@xrdef{Options for Specifying Filenames-title}{Options for Specifying Filenames}
+@xrdef{Options for Specifying Filenames-snt}{Section@tie 16.1}
+@xrdef{option-header-title}{Options for Specifying Filenames}
+@xrdef{option-header-snt}{}
+@xrdef{Scanner Options-pg}{35}
+@xrdef{Options for Specifying Filenames-pg}{35}
+@xrdef{option-header-pg}{35}
+@xrdef{option-outfile-title}{Options for Specifying Filenames}
+@xrdef{option-outfile-snt}{}
+@xrdef{option-stdout-title}{Options for Specifying Filenames}
+@xrdef{option-stdout-snt}{}
+@xrdef{Options Affecting Scanner Behavior-title}{Options Affecting Scanner Behavior}
+@xrdef{Options Affecting Scanner Behavior-snt}{Section@tie 16.2}
+@xrdef{option-case-insensitive-title}{Options Affecting Scanner Behavior}
+@xrdef{option-case-insensitive-snt}{}
+@xrdef{option-lex-compat-title}{Options Affecting Scanner Behavior}
+@xrdef{option-lex-compat-snt}{}
+@xrdef{option-batch-title}{Options Affecting Scanner Behavior}
+@xrdef{option-batch-snt}{}
+@xrdef{option-outfile-pg}{36}
+@xrdef{option-stdout-pg}{36}
+@xrdef{Options Affecting Scanner Behavior-pg}{36}
+@xrdef{option-case-insensitive-pg}{36}
+@xrdef{option-lex-compat-pg}{36}
+@xrdef{option-batch-pg}{36}
+@xrdef{option-interactive-title}{Options Affecting Scanner Behavior}
+@xrdef{option-interactive-snt}{}
+@xrdef{option-7bit-title}{Options Affecting Scanner Behavior}
+@xrdef{option-7bit-snt}{}
+@xrdef{option-8bit-title}{Options Affecting Scanner Behavior}
+@xrdef{option-8bit-snt}{}
+@xrdef{option-default-title}{Options Affecting Scanner Behavior}
+@xrdef{option-default-snt}{}
+@xrdef{option-interactive-pg}{37}
+@xrdef{option-7bit-pg}{37}
+@xrdef{option-8bit-pg}{37}
+@xrdef{option-always-interactive-title}{Options Affecting Scanner Behavior}
+@xrdef{option-always-interactive-snt}{}
+@xrdef{option-posix-title}{Options Affecting Scanner Behavior}
+@xrdef{option-posix-snt}{}
+@xrdef{option-stack-title}{Options Affecting Scanner Behavior}
+@xrdef{option-stack-snt}{}
+@xrdef{option-stdinit-title}{Options Affecting Scanner Behavior}
+@xrdef{option-stdinit-snt}{}
+@xrdef{option-yylineno-title}{Options Affecting Scanner Behavior}
+@xrdef{option-yylineno-snt}{}
+@xrdef{option-yywrap-title}{Options Affecting Scanner Behavior}
+@xrdef{option-yywrap-snt}{}
+@xrdef{option-default-pg}{38}
+@xrdef{option-always-interactive-pg}{38}
+@xrdef{option-posix-pg}{38}
+@xrdef{option-stack-pg}{38}
+@xrdef{option-stdinit-pg}{38}
+@xrdef{option-yylineno-pg}{38}
+@xrdef{option-yywrap-pg}{38}
+@xrdef{Code-Level And API Options-title}{Code-Level And API Options}
+@xrdef{Code-Level And API Options-snt}{Section@tie 16.3}
+@xrdef{option-ansi-definitions-title}{Code-Level And API Options}
+@xrdef{option-ansi-definitions-snt}{}
+@xrdef{option-ansi-prototypes-title}{Code-Level And API Options}
+@xrdef{option-ansi-prototypes-snt}{}
+@xrdef{option-bison-bridge-title}{Code-Level And API Options}
+@xrdef{option-bison-bridge-snt}{}
+@xrdef{option-bison-locations-title}{Code-Level And API Options}
+@xrdef{option-bison-locations-snt}{}
+@xrdef{option-noline-title}{Code-Level And API Options}
+@xrdef{option-noline-snt}{}
+@xrdef{option-reentrant-title}{Code-Level And API Options}
+@xrdef{option-reentrant-snt}{}
+@xrdef{option-c++-title}{Code-Level And API Options}
+@xrdef{option-c++-snt}{}
+@xrdef{option-array-title}{Code-Level And API Options}
+@xrdef{option-array-snt}{}
+@xrdef{option-pointer-title}{Code-Level And API Options}
+@xrdef{option-pointer-snt}{}
+@xrdef{option-prefix-title}{Code-Level And API Options}
+@xrdef{option-prefix-snt}{}
+@xrdef{Code-Level And API Options-pg}{39}
+@xrdef{option-ansi-definitions-pg}{39}
+@xrdef{option-ansi-prototypes-pg}{39}
+@xrdef{option-bison-bridge-pg}{39}
+@xrdef{option-bison-locations-pg}{39}
+@xrdef{option-noline-pg}{39}
+@xrdef{option-reentrant-pg}{39}
+@xrdef{option-c++-pg}{39}
+@xrdef{option-array-pg}{39}
+@xrdef{option-pointer-pg}{39}
+@xrdef{option-main-title}{Code-Level And API Options}
+@xrdef{option-main-snt}{}
+@xrdef{option-nounistd-title}{Code-Level And API Options}
+@xrdef{option-nounistd-snt}{}
+@xrdef{option-yyclass-title}{Code-Level And API Options}
+@xrdef{option-yyclass-snt}{}
+@xrdef{option-prefix-pg}{40}
+@xrdef{option-main-pg}{40}
+@xrdef{option-nounistd-pg}{40}
+@xrdef{option-yyclass-pg}{40}
+@xrdef{Options for Scanner Speed and Size-title}{Options for Scanner Speed and Size}
+@xrdef{Options for Scanner Speed and Size-snt}{Section@tie 16.4}
+@xrdef{option-align-title}{Options for Scanner Speed and Size}
+@xrdef{option-align-snt}{}
+@xrdef{option-ecs-title}{Options for Scanner Speed and Size}
+@xrdef{option-ecs-snt}{}
+@xrdef{option-meta-ecs-title}{Options for Scanner Speed and Size}
+@xrdef{option-meta-ecs-snt}{}
+@xrdef{option-read-title}{Options for Scanner Speed and Size}
+@xrdef{option-read-snt}{}
+@xrdef{Options for Scanner Speed and Size-pg}{41}
+@xrdef{option-align-pg}{41}
+@xrdef{option-ecs-pg}{41}
+@xrdef{option-meta-ecs-pg}{41}
+@xrdef{option-read-pg}{41}
+@xrdef{option-full-title}{Options for Scanner Speed and Size}
+@xrdef{option-full-snt}{}
+@xrdef{option-fast-title}{Options for Scanner Speed and Size}
+@xrdef{option-fast-snt}{}
+@xrdef{option-full-pg}{42}
+@xrdef{option-fast-pg}{42}
+@xrdef{Debugging Options-title}{Debugging Options}
+@xrdef{Debugging Options-snt}{Section@tie 16.5}
+@xrdef{option-backup-title}{Debugging Options}
+@xrdef{option-backup-snt}{}
+@xrdef{option-debug-title}{Debugging Options}
+@xrdef{option-debug-snt}{}
+@xrdef{option-perf-report-title}{Debugging Options}
+@xrdef{option-perf-report-snt}{}
+@xrdef{option-nodefault-title}{Debugging Options}
+@xrdef{option-nodefault-snt}{}
+@xrdef{option-trace-title}{Debugging Options}
+@xrdef{option-trace-snt}{}
+@xrdef{option-nowarn-title}{Debugging Options}
+@xrdef{option-nowarn-snt}{}
+@xrdef{option-verbose-title}{Debugging Options}
+@xrdef{option-verbose-snt}{}
+@xrdef{Debugging Options-pg}{43}
+@xrdef{option-backup-pg}{43}
+@xrdef{option-debug-pg}{43}
+@xrdef{option-perf-report-pg}{43}
+@xrdef{option-nodefault-pg}{43}
+@xrdef{option-trace-pg}{43}
+@xrdef{option-nowarn-pg}{43}
+@xrdef{option-warn-title}{Debugging Options}
+@xrdef{option-warn-snt}{}
+@xrdef{Miscellaneous Options-title}{Miscellaneous Options}
+@xrdef{Miscellaneous Options-snt}{Section@tie 16.6}
+@xrdef{option-verbose-pg}{44}
+@xrdef{option-warn-pg}{44}
+@xrdef{Miscellaneous Options-pg}{44}
+@xrdef{Performance-title}{Performance Considerations}
+@xrdef{Performance-snt}{Chapter@tie 17}
+@xrdef{Performance-pg}{45}
+@xrdef{Cxx-title}{Generating C++ Scanners}
+@xrdef{Cxx-snt}{Chapter@tie 18}
+@xrdef{Cxx-pg}{50}
+@xrdef{Reentrant-title}{Reentrant C Scanners}
+@xrdef{Reentrant-snt}{Chapter@tie 19}
+@xrdef{Reentrant Uses-title}{Uses for Reentrant Scanners}
+@xrdef{Reentrant Uses-snt}{Section@tie 19.1}
+@xrdef{Reentrant-pg}{54}
+@xrdef{Reentrant Uses-pg}{54}
+@xrdef{Reentrant Overview-title}{An Overview of the Reentrant API}
+@xrdef{Reentrant Overview-snt}{Section@tie 19.2}
+@xrdef{Reentrant Example-title}{Reentrant Example}
+@xrdef{Reentrant Example-snt}{Section@tie 19.3}
+@xrdef{Reentrant Detail-title}{The Reentrant API in Detail}
+@xrdef{Reentrant Detail-snt}{Section@tie 19.4}
+@xrdef{Reentrant Overview-pg}{55}
+@xrdef{Reentrant Example-pg}{55}
+@xrdef{Specify Reentrant-title}{Declaring a Scanner As Reentrant}
+@xrdef{Specify Reentrant-snt}{Section@tie 19.4.1}
+@xrdef{Extra Reentrant Argument-title}{The Extra Argument}
+@xrdef{Extra Reentrant Argument-snt}{Section@tie 19.4.2}
+@xrdef{Global Replacement-title}{Global Variables Replaced By Macros}
+@xrdef{Global Replacement-snt}{Section@tie 19.4.3}
+@xrdef{Init and Destroy Functions-title}{Init and Destroy Functions}
+@xrdef{Init and Destroy Functions-snt}{Section@tie 19.4.4}
+@xrdef{Reentrant Detail-pg}{56}
+@xrdef{Specify Reentrant-pg}{56}
+@xrdef{Extra Reentrant Argument-pg}{56}
+@xrdef{Global Replacement-pg}{56}
+@xrdef{Init and Destroy Functions-pg}{56}
+@xrdef{Accessor Methods-title}{Accessing Variables with Reentrant Scanners}
+@xrdef{Accessor Methods-snt}{Section@tie 19.4.5}
+@xrdef{Accessor Methods-pg}{57}
+@xrdef{Extra Data-title}{Extra Data}
+@xrdef{Extra Data-snt}{Section@tie 19.4.6}
+@xrdef{Extra Data-pg}{58}
+@xrdef{About yyscan_t-title}{About yyscan_t}
+@xrdef{About yyscan_t-snt}{Section@tie 19.4.7}
+@xrdef{Reentrant Functions-title}{Functions and Macros Available in Reentrant C Scanners}
+@xrdef{Reentrant Functions-snt}{Section@tie 19.5}
+@xrdef{About yyscan_t-pg}{59}
+@xrdef{Reentrant Functions-pg}{59}
+@xrdef{bison-functions-title}{Functions and Macros Available in Reentrant C Scanners}
+@xrdef{bison-functions-snt}{}
+@xrdef{bison-functions-pg}{60}
+@xrdef{Lex and Posix-title}{Incompatibilities with Lex and Posix}
+@xrdef{Lex and Posix-snt}{Chapter@tie 20}
+@xrdef{Lex and Posix-pg}{61}
+@xrdef{Memory Management-title}{Memory Management}
+@xrdef{Memory Management-snt}{Chapter@tie 21}
+@xrdef{memory-management-title}{Memory Management}
+@xrdef{memory-management-snt}{}
+@xrdef{The Default Memory Management-title}{The Default Memory Management}
+@xrdef{The Default Memory Management-snt}{Section@tie 21.1}
+@xrdef{Memory Management-pg}{64}
+@xrdef{memory-management-pg}{64}
+@xrdef{The Default Memory Management-pg}{64}
+@xrdef{Overriding The Default Memory Management-title}{Overriding The Default Memory Management}
+@xrdef{Overriding The Default Memory Management-snt}{Section@tie 21.2}
+@xrdef{Overriding The Default Memory Management-pg}{65}
+@xrdef{A Note About yytext And Memory-title}{A Note About yytext And Memory}
+@xrdef{A Note About yytext And Memory-snt}{Section@tie 21.3}
+@xrdef{A Note About yytext And Memory-pg}{66}
+@xrdef{Serialized Tables-title}{Serialized Tables}
+@xrdef{Serialized Tables-snt}{Chapter@tie 22}
+@xrdef{serialization-title}{Serialized Tables}
+@xrdef{serialization-snt}{}
+@xrdef{Creating Serialized Tables-title}{Creating Serialized Tables}
+@xrdef{Creating Serialized Tables-snt}{Section@tie 22.1}
+@xrdef{Loading and Unloading Serialized Tables-title}{Loading and Unloading Serialized Tables}
+@xrdef{Loading and Unloading Serialized Tables-snt}{Section@tie 22.2}
+@xrdef{Serialized Tables-pg}{67}
+@xrdef{serialization-pg}{67}
+@xrdef{Creating Serialized Tables-pg}{67}
+@xrdef{Loading and Unloading Serialized Tables-pg}{67}
+@xrdef{Tables File Format-title}{Tables File Format}
+@xrdef{Tables File Format-snt}{Section@tie 22.3}
+@xrdef{Tables File Format-pg}{68}
+@xrdef{Diagnostics-title}{Diagnostics}
+@xrdef{Diagnostics-snt}{Chapter@tie 23}
+@xrdef{Diagnostics-pg}{72}
+@xrdef{Limitations-title}{Limitations}
+@xrdef{Limitations-snt}{Chapter@tie 24}
+@xrdef{Limitations-pg}{74}
+@xrdef{Bibliography-title}{Additional Reading}
+@xrdef{Bibliography-snt}{Chapter@tie 25}
+@xrdef{Bibliography-pg}{75}
+@xrdef{FAQ-title}{FAQ}
+@xrdef{FAQ-snt}{}
+@xrdef{When was flex born?-title}{When was flex born?}
+@xrdef{When was flex born?-snt}{}
+@xrdef{How do I expand backslash-escape sequences in C-style quoted strings?-title}{How do I expand backslash-escape sequences in C-style quoted strings?}
+@xrdef{How do I expand backslash-escape sequences in C-style quoted strings?-snt}{}
+@xrdef{Why do flex scanners call fileno if it is not ANSI compatible?-title}{Why do flex scanners call fileno if it is not ANSI compatible?}
+@xrdef{Why do flex scanners call fileno if it is not ANSI compatible?-snt}{}
+@xrdef{Does flex support recursive pattern definitions?-title}{Does flex support recursive pattern definitions?}
+@xrdef{Does flex support recursive pattern definitions?-snt}{}
+@xrdef{How do I skip huge chunks of input (tens of megabytes) while using flex?-title}{How do I skip huge chunks of input (tens of megabytes) while using flex?}
+@xrdef{How do I skip huge chunks of input (tens of megabytes) while using flex?-snt}{}
+@xrdef{FAQ-pg}{76}
+@xrdef{When was flex born?-pg}{76}
+@xrdef{How do I expand backslash-escape sequences in C-style quoted strings?-pg}{76}
+@xrdef{Why do flex scanners call fileno if it is not ANSI compatible?-pg}{76}
+@xrdef{Does flex support recursive pattern definitions?-pg}{76}
+@xrdef{Flex is not matching my patterns in the same order that I defined them.-title}{Flex is not matching my patterns in the same order that I defined them.}
+@xrdef{Flex is not matching my patterns in the same order that I defined them.-snt}{}
+@xrdef{My actions are executing out of order or sometimes not at all.-title}{My actions are executing out of order or sometimes not at all.}
+@xrdef{My actions are executing out of order or sometimes not at all.-snt}{}
+@xrdef{How can I have multiple input sources feed into the same scanner at the same time?-title}{How can I have multiple input sources feed into the same scanner at the same time?}
+@xrdef{How can I have multiple input sources feed into the same scanner at the same time?-snt}{}
+@xrdef{How do I skip huge chunks of input (tens of megabytes) while using flex?-pg}{77}
+@xrdef{Flex is not matching my patterns in the same order that I defined them.-pg}{77}
+@xrdef{My actions are executing out of order or sometimes not at all.-pg}{77}
+@xrdef{How can I have multiple input sources feed into the same scanner at the same time?-pg}{77}
+@xrdef{Can I build nested parsers that work with the same input file?-title}{Can I build nested parsers that work with the same input file?}
+@xrdef{Can I build nested parsers that work with the same input file?-snt}{}
+@xrdef{How can I match text only at the end of a file?-title}{How can I match text only at the end of a file?}
+@xrdef{How can I match text only at the end of a file?-snt}{}
+@xrdef{How can I make REJECT cascade across start condition boundaries?-title}{How can I make REJECT cascade across start condition boundaries?}
+@xrdef{How can I make REJECT cascade across start condition boundaries?-snt}{}
+@xrdef{Can I build nested parsers that work with the same input file?-pg}{78}
+@xrdef{How can I match text only at the end of a file?-pg}{78}
+@xrdef{How can I make REJECT cascade across start condition boundaries?-pg}{78}
+@xrdef{Why cant I use fast or full tables with interactive mode?-title}{Why can't I use fast or full tables with interactive mode?}
+@xrdef{Why cant I use fast or full tables with interactive mode?-snt}{}
+@xrdef{How much faster is -F or -f than -C?-title}{How much faster is -F or -f than -C?}
+@xrdef{How much faster is -F or -f than -C?-snt}{}
+@xrdef{If I have a simple grammar cant I just parse it with flex?-title}{If I have a simple grammar can't I just parse it with flex?}
+@xrdef{If I have a simple grammar cant I just parse it with flex?-snt}{}
+@xrdef{Why doesn't yyrestart() set the start state back to INITIAL?-title}{Why doesn't yyrestart() set the start state back to INITIAL?}
+@xrdef{Why doesn't yyrestart() set the start state back to INITIAL?-snt}{}
+@xrdef{How can I match C-style comments?-title}{How can I match C-style comments?}
+@xrdef{How can I match C-style comments?-snt}{}
+@xrdef{Why cant I use fast or full tables with interactive mode?-pg}{79}
+@xrdef{How much faster is -F or -f than -C?-pg}{79}
+@xrdef{If I have a simple grammar cant I just parse it with flex?-pg}{79}
+@xrdef{Why doesn't yyrestart() set the start state back to INITIAL?-pg}{79}
+@xrdef{How can I match C-style comments?-pg}{79}
+@xrdef{The period isn't working the way I expected.-title}{The '.' isn't working the way I expected.}
+@xrdef{The period isn't working the way I expected.-snt}{}
+@xrdef{Can I get the flex manual in another format?-title}{Can I get the flex manual in another format?}
+@xrdef{Can I get the flex manual in another format?-snt}{}
+@xrdef{Does there exist a "faster" NDFA->DFA algorithm?-title}{Does there exist a "faster" NDFA->DFA algorithm?}
+@xrdef{Does there exist a "faster" NDFA->DFA algorithm?-snt}{}
+@xrdef{How does flex compile the DFA so quickly?-title}{How does flex compile the DFA so quickly?}
+@xrdef{How does flex compile the DFA so quickly?-snt}{}
+@xrdef{The period isn't working the way I expected.-pg}{80}
+@xrdef{Can I get the flex manual in another format?-pg}{80}
+@xrdef{Does there exist a "faster" NDFA->DFA algorithm?-pg}{80}
+@xrdef{How does flex compile the DFA so quickly?-pg}{80}
+@xrdef{How can I use more than 8192 rules?-title}{How can I use more than 8192 rules?}
+@xrdef{How can I use more than 8192 rules?-snt}{}
+@xrdef{How do I abandon a file in the middle of a scan and switch to a new file?-title}{How do I abandon a file in the middle of a scan and switch to a new file?}
+@xrdef{How do I abandon a file in the middle of a scan and switch to a new file?-snt}{}
+@xrdef{How do I execute code only during initialization (only before the first scan)?-title}{How do I execute code only during initialization (only before the first scan)?}
+@xrdef{How do I execute code only during initialization (only before the first scan)?-snt}{}
+@xrdef{How can I use more than 8192 rules?-pg}{81}
+@xrdef{How do I abandon a file in the middle of a scan and switch to a new file?-pg}{81}
+@xrdef{How do I execute code only during initialization (only before the first scan)?-pg}{81}
+@xrdef{How do I execute code at termination?-title}{How do I execute code at termination?}
+@xrdef{How do I execute code at termination?-snt}{}
+@xrdef{Where else can I find help?-title}{Where else can I find help?}
+@xrdef{Where else can I find help?-snt}{}
+@xrdef{Can I include comments in the "rules" section of the file?-title}{Can I include comments in the "rules" section of the file?}
+@xrdef{Can I include comments in the "rules" section of the file?-snt}{}
+@xrdef{I get an error about undefined yywrap().-title}{I get an error about undefined yywrap().}
+@xrdef{I get an error about undefined yywrap().-snt}{}
+@xrdef{How can I change the matching pattern at run time?-title}{How can I change the matching pattern at run time?}
+@xrdef{How can I change the matching pattern at run time?-snt}{}
+@xrdef{How can I expand macros in the input?-title}{How can I expand macros in the input?}
+@xrdef{How can I expand macros in the input?-snt}{}
+@xrdef{How do I execute code at termination?-pg}{82}
+@xrdef{Where else can I find help?-pg}{82}
+@xrdef{Can I include comments in the "rules" section of the file?-pg}{82}
+@xrdef{I get an error about undefined yywrap().-pg}{82}
+@xrdef{How can I change the matching pattern at run time?-pg}{82}
+@xrdef{How can I expand macros in the input?-pg}{82}
+@xrdef{How can I build a two-pass scanner?-title}{How can I build a two-pass scanner?}
+@xrdef{How can I build a two-pass scanner?-snt}{}
+@xrdef{How do I match any string not matched in the preceding rules?-title}{How do I match any string not matched in the preceding rules?}
+@xrdef{How do I match any string not matched in the preceding rules?-snt}{}
+@xrdef{I am trying to port code from AT&T lex that uses yysptr and yysbuf.-title}{I am trying to port code from AT&T lex that uses yysptr and yysbuf.}
+@xrdef{I am trying to port code from AT&T lex that uses yysptr and yysbuf.-snt}{}
+@xrdef{Is there a way to make flex treat NULL like a regular character?-title}{Is there a way to make flex treat NULL like a regular character?}
+@xrdef{Is there a way to make flex treat NULL like a regular character?-snt}{}
+@xrdef{Whenever flex can not match the input it says "flex scanner jammed".-title}{Whenever flex can not match the input it says "flex scanner jammed".}
+@xrdef{Whenever flex can not match the input it says "flex scanner jammed".-snt}{}
+@xrdef{How can I build a two-pass scanner?-pg}{83}
+@xrdef{How do I match any string not matched in the preceding rules?-pg}{83}
+@xrdef{I am trying to port code from AT&T lex that uses yysptr and yysbuf.-pg}{83}
+@xrdef{Is there a way to make flex treat NULL like a regular character?-pg}{83}
+@xrdef{Why doesn't flex have non-greedy operators like perl does?-title}{Why doesn't flex have non-greedy operators like perl does?}
+@xrdef{Why doesn't flex have non-greedy operators like perl does?-snt}{}
+@xrdef{Memory leak - 16386 bytes allocated by malloc.-title}{Memory leak - 16386 bytes allocated by malloc.}
+@xrdef{Memory leak - 16386 bytes allocated by malloc.-snt}{}
+@xrdef{faq-memory-leak-title}{Memory leak - 16386 bytes allocated by malloc.}
+@xrdef{faq-memory-leak-snt}{}
+@xrdef{How do I track the byte offset for lseek()?-title}{How do I track the byte offset for lseek()?}
+@xrdef{How do I track the byte offset for lseek()?-snt}{}
+@xrdef{Whenever flex can not match the input it says "flex scanner jammed".-pg}{84}
+@xrdef{Why doesn't flex have non-greedy operators like perl does?-pg}{84}
+@xrdef{Memory leak - 16386 bytes allocated by malloc.-pg}{84}
+@xrdef{faq-memory-leak-pg}{84}
+@xrdef{How do I use my own I/O classes in a C++ scanner?-title}{How do I use my own I/O classes in a C++ scanner?}
+@xrdef{How do I use my own I/O classes in a C++ scanner?-snt}{}
+@xrdef{How do I skip as many chars as possible?-title}{How do I skip as many chars as possible?}
+@xrdef{How do I skip as many chars as possible?-snt}{}
+@xrdef{How do I track the byte offset for lseek()?-pg}{85}
+@xrdef{How do I use my own I/O classes in a C++ scanner?-pg}{85}
+@xrdef{How do I skip as many chars as possible?-pg}{85}
+@xrdef{deleteme00-title}{deleteme00}
+@xrdef{deleteme00-snt}{}
+@xrdef{Are certain equivalent patterns faster than others?-title}{Are certain equivalent patterns faster than others?}
+@xrdef{Are certain equivalent patterns faster than others?-snt}{}
+@xrdef{deleteme00-pg}{86}
+@xrdef{Are certain equivalent patterns faster than others?-pg}{86}
+@xrdef{Is backing up a big deal?-title}{Is backing up a big deal?}
+@xrdef{Is backing up a big deal?-snt}{}
+@xrdef{Is backing up a big deal?-pg}{87}
+@xrdef{Can I fake multi-byte character support?-title}{Can I fake multi-byte character support?}
+@xrdef{Can I fake multi-byte character support?-snt}{}
+@xrdef{Can I fake multi-byte character support?-pg}{88}
+@xrdef{deleteme01-title}{deleteme01}
+@xrdef{deleteme01-snt}{}
+@xrdef{deleteme01-pg}{89}
+@xrdef{Can you discuss some flex internals?-title}{Can you discuss some flex internals?}
+@xrdef{Can you discuss some flex internals?-snt}{}
+@xrdef{Can you discuss some flex internals?-pg}{90}
+@xrdef{unput() messes up yy_at_bol-title}{unput() messes up yy_at_bol}
+@xrdef{unput() messes up yy_at_bol-snt}{}
+@xrdef{The | operator is not doing what I want-title}{The | operator is not doing what I want}
+@xrdef{The | operator is not doing what I want-snt}{}
+@xrdef{unput() messes up yy_at_bol-pg}{91}
+@xrdef{The | operator is not doing what I want-pg}{91}
+@xrdef{Why can't flex understand this variable trailing context pattern?-title}{Why can't flex understand this variable trailing context pattern?}
+@xrdef{Why can't flex understand this variable trailing context pattern?-snt}{}
+@xrdef{The ^ operator isn't working-title}{The ^ operator isn't working}
+@xrdef{The ^ operator isn't working-snt}{}
+@xrdef{Why can't flex understand this variable trailing context pattern?-pg}{92}
+@xrdef{Trailing context is getting confused with trailing optional patterns-title}{Trailing context is getting confused with trailing optional patterns}
+@xrdef{Trailing context is getting confused with trailing optional patterns-snt}{}
+@xrdef{The ^ operator isn't working-pg}{93}
+@xrdef{Trailing context is getting confused with trailing optional patterns-pg}{93}
+@xrdef{Is flex GNU or not?-title}{Is flex GNU or not?}
+@xrdef{Is flex GNU or not?-snt}{}
+@xrdef{ERASEME53-title}{ERASEME53}
+@xrdef{ERASEME53-snt}{}
+@xrdef{Is flex GNU or not?-pg}{94}
+@xrdef{I need to scan if-then-else blocks and while loops-title}{I need to scan if-then-else blocks and while loops}
+@xrdef{I need to scan if-then-else blocks and while loops-snt}{}
+@xrdef{ERASEME55-title}{ERASEME55}
+@xrdef{ERASEME55-snt}{}
+@xrdef{ERASEME53-pg}{95}
+@xrdef{I need to scan if-then-else blocks and while loops-pg}{95}
+@xrdef{ERASEME55-pg}{95}
+@xrdef{ERASEME56-title}{ERASEME56}
+@xrdef{ERASEME56-snt}{}
+@xrdef{ERASEME56-pg}{96}
+@xrdef{ERASEME57-title}{ERASEME57}
+@xrdef{ERASEME57-snt}{}
+@xrdef{Is there a repository for flex scanners?-title}{Is there a repository for flex scanners?}
+@xrdef{Is there a repository for flex scanners?-snt}{}
+@xrdef{How can I conditionally compile or preprocess my flex input file?-title}{How can I conditionally compile or preprocess my flex input file?}
+@xrdef{How can I conditionally compile or preprocess my flex input file?-snt}{}
+@xrdef{Where can I find grammars for lex and yacc?-title}{Where can I find grammars for lex and yacc?}
+@xrdef{Where can I find grammars for lex and yacc?-snt}{}
+@xrdef{I get an end-of-buffer message for each character scanned.-title}{I get an end-of-buffer message for each character scanned.}
+@xrdef{I get an end-of-buffer message for each character scanned.-snt}{}
+@xrdef{ERASEME57-pg}{97}
+@xrdef{Is there a repository for flex scanners?-pg}{97}
+@xrdef{How can I conditionally compile or preprocess my flex input file?-pg}{97}
+@xrdef{Where can I find grammars for lex and yacc?-pg}{97}
+@xrdef{unnamed-faq-62-title}{unnamed-faq-62}
+@xrdef{unnamed-faq-62-snt}{}
+@xrdef{unnamed-faq-63-title}{unnamed-faq-63}
+@xrdef{unnamed-faq-63-snt}{}
+@xrdef{I get an end-of-buffer message for each character scanned.-pg}{98}
+@xrdef{unnamed-faq-62-pg}{98}
+@xrdef{unnamed-faq-63-pg}{98}
+@xrdef{unnamed-faq-64-title}{unnamed-faq-64}
+@xrdef{unnamed-faq-64-snt}{}
+@xrdef{unnamed-faq-65-title}{unnamed-faq-65}
+@xrdef{unnamed-faq-65-snt}{}
+@xrdef{unnamed-faq-64-pg}{99}
+@xrdef{unnamed-faq-65-pg}{99}
+@xrdef{unnamed-faq-66-title}{unnamed-faq-66}
+@xrdef{unnamed-faq-66-snt}{}
+@xrdef{unnamed-faq-67-title}{unnamed-faq-67}
+@xrdef{unnamed-faq-67-snt}{}
+@xrdef{unnamed-faq-66-pg}{100}
+@xrdef{unnamed-faq-67-pg}{100}
+@xrdef{unnamed-faq-68-title}{unnamed-faq-68}
+@xrdef{unnamed-faq-68-snt}{}
+@xrdef{unnamed-faq-69-title}{unnamed-faq-69}
+@xrdef{unnamed-faq-69-snt}{}
+@xrdef{unnamed-faq-68-pg}{101}
+@xrdef{unnamed-faq-69-pg}{101}
+@xrdef{unnamed-faq-70-title}{unnamed-faq-70}
+@xrdef{unnamed-faq-70-snt}{}
+@xrdef{unnamed-faq-71-title}{unnamed-faq-71}
+@xrdef{unnamed-faq-71-snt}{}
+@xrdef{unnamed-faq-70-pg}{102}
+@xrdef{unnamed-faq-71-pg}{102}
+@xrdef{unnamed-faq-72-title}{unnamed-faq-72}
+@xrdef{unnamed-faq-72-snt}{}
+@xrdef{unnamed-faq-73-title}{unnamed-faq-73}
+@xrdef{unnamed-faq-73-snt}{}
+@xrdef{unnamed-faq-72-pg}{103}
+@xrdef{unnamed-faq-73-pg}{103}
+@xrdef{unnamed-faq-74-title}{unnamed-faq-74}
+@xrdef{unnamed-faq-74-snt}{}
+@xrdef{unnamed-faq-75-title}{unnamed-faq-75}
+@xrdef{unnamed-faq-75-snt}{}
+@xrdef{unnamed-faq-74-pg}{104}
+@xrdef{unnamed-faq-75-pg}{104}
+@xrdef{unnamed-faq-76-title}{unnamed-faq-76}
+@xrdef{unnamed-faq-76-snt}{}
+@xrdef{unnamed-faq-77-title}{unnamed-faq-77}
+@xrdef{unnamed-faq-77-snt}{}
+@xrdef{unnamed-faq-76-pg}{105}
+@xrdef{unnamed-faq-77-pg}{105}
+@xrdef{unnamed-faq-78-title}{unnamed-faq-78}
+@xrdef{unnamed-faq-78-snt}{}
+@xrdef{unnamed-faq-79-title}{unnamed-faq-79}
+@xrdef{unnamed-faq-79-snt}{}
+@xrdef{unnamed-faq-78-pg}{106}
+@xrdef{unnamed-faq-79-pg}{106}
+@xrdef{unnamed-faq-80-title}{unnamed-faq-80}
+@xrdef{unnamed-faq-80-snt}{}
+@xrdef{unnamed-faq-80-pg}{107}
+@xrdef{unnamed-faq-81-title}{unnamed-faq-81}
+@xrdef{unnamed-faq-81-snt}{}
+@xrdef{unnamed-faq-81-pg}{108}
+@xrdef{unnamed-faq-82-title}{unnamed-faq-82}
+@xrdef{unnamed-faq-82-snt}{}
+@xrdef{unnamed-faq-83-title}{unnamed-faq-83}
+@xrdef{unnamed-faq-83-snt}{}
+@xrdef{unnamed-faq-82-pg}{109}
+@xrdef{unnamed-faq-83-pg}{109}
+@xrdef{unnamed-faq-84-title}{unnamed-faq-84}
+@xrdef{unnamed-faq-84-snt}{}
+@xrdef{unnamed-faq-84-pg}{110}
+@xrdef{unnamed-faq-85-title}{unnamed-faq-85}
+@xrdef{unnamed-faq-85-snt}{}
+@xrdef{unnamed-faq-86-title}{unnamed-faq-86}
+@xrdef{unnamed-faq-86-snt}{}
+@xrdef{unnamed-faq-85-pg}{111}
+@xrdef{unnamed-faq-86-pg}{111}
+@xrdef{unnamed-faq-87-title}{unnamed-faq-87}
+@xrdef{unnamed-faq-87-snt}{}
+@xrdef{unnamed-faq-88-title}{unnamed-faq-88}
+@xrdef{unnamed-faq-88-snt}{}
+@xrdef{unnamed-faq-87-pg}{112}
+@xrdef{unnamed-faq-88-pg}{112}
+@xrdef{unnamed-faq-90-title}{unnamed-faq-90}
+@xrdef{unnamed-faq-90-snt}{}
+@xrdef{unnamed-faq-91-title}{unnamed-faq-91}
+@xrdef{unnamed-faq-91-snt}{}
+@xrdef{unnamed-faq-90-pg}{113}
+@xrdef{unnamed-faq-91-pg}{113}
+@xrdef{unnamed-faq-92-title}{unnamed-faq-92}
+@xrdef{unnamed-faq-92-snt}{}
+@xrdef{unnamed-faq-93-title}{unnamed-faq-93}
+@xrdef{unnamed-faq-93-snt}{}
+@xrdef{unnamed-faq-94-title}{unnamed-faq-94}
+@xrdef{unnamed-faq-94-snt}{}
+@xrdef{unnamed-faq-92-pg}{115}
+@xrdef{unnamed-faq-93-pg}{115}
+@xrdef{unnamed-faq-94-pg}{115}
+@xrdef{unnamed-faq-95-title}{unnamed-faq-95}
+@xrdef{unnamed-faq-95-snt}{}
+@xrdef{unnamed-faq-95-pg}{116}
+@xrdef{unnamed-faq-96-title}{unnamed-faq-96}
+@xrdef{unnamed-faq-96-snt}{}
+@xrdef{unnamed-faq-97-title}{unnamed-faq-97}
+@xrdef{unnamed-faq-97-snt}{}
+@xrdef{unnamed-faq-96-pg}{117}
+@xrdef{unnamed-faq-97-pg}{117}
+@xrdef{unnamed-faq-98-title}{unnamed-faq-98}
+@xrdef{unnamed-faq-98-snt}{}
+@xrdef{unnamed-faq-99-title}{unnamed-faq-99}
+@xrdef{unnamed-faq-99-snt}{}
+@xrdef{unnamed-faq-100-title}{unnamed-faq-100}
+@xrdef{unnamed-faq-100-snt}{}
+@xrdef{unnamed-faq-98-pg}{118}
+@xrdef{unnamed-faq-99-pg}{118}
+@xrdef{unnamed-faq-101-title}{unnamed-faq-101}
+@xrdef{unnamed-faq-101-snt}{}
+@xrdef{What is the difference between YYLEX_PARAM and YY_DECL?-title}{What is the difference between YYLEX_PARAM and YY_DECL?}
+@xrdef{What is the difference between YYLEX_PARAM and YY_DECL?-snt}{}
+@xrdef{unnamed-faq-100-pg}{119}
+@xrdef{unnamed-faq-101-pg}{119}
+@xrdef{Why do I get "conflicting types for yylex" error?-title}{Why do I get "conflicting types for yylex" error?}
+@xrdef{Why do I get "conflicting types for yylex" error?-snt}{}
+@xrdef{How do I access the values set in a Flex action from within a Bison action?-title}{How do I access the values set in a Flex action from within a Bison action?}
+@xrdef{How do I access the values set in a Flex action from within a Bison action?-snt}{}
+@xrdef{What is the difference between YYLEX_PARAM and YY_DECL?-pg}{120}
+@xrdef{Why do I get "conflicting types for yylex" error?-pg}{120}
+@xrdef{How do I access the values set in a Flex action from within a Bison action?-pg}{120}
+@xrdef{Appendices-title}{Appendices}
+@xrdef{Appendices-snt}{Appendix@tie @char65{}}
+@xrdef{Makefiles and Flex-title}{Makefiles and Flex}
+@xrdef{Makefiles and Flex-snt}{Section@tie @char65.1}
+@xrdef{Appendices-pg}{121}
+@xrdef{Makefiles and Flex-pg}{121}
+@xrdef{Bison Bridge-title}{C Scanners with Bison Parsers}
+@xrdef{Bison Bridge-snt}{Section@tie @char65.2}
+@xrdef{Bison Bridge-pg}{122}
+@xrdef{M4 Dependency-title}{M4 Dependency}
+@xrdef{M4 Dependency-snt}{Section@tie @char65.3}
+@xrdef{Common Patterns-title}{Common Patterns}
+@xrdef{Common Patterns-snt}{Section@tie @char65.4}
+@xrdef{Numbers-title}{Numbers}
+@xrdef{Numbers-snt}{Section@tie @char65.4.1}
+@xrdef{M4 Dependency-pg}{124}
+@xrdef{Common Patterns-pg}{124}
+@xrdef{Numbers-pg}{124}
+@xrdef{Identifiers-title}{Identifiers}
+@xrdef{Identifiers-snt}{Section@tie @char65.4.2}
+@xrdef{Quoted Constructs-title}{Quoted Constructs}
+@xrdef{Quoted Constructs-snt}{Section@tie @char65.4.3}
+@xrdef{Addresses-title}{Addresses}
+@xrdef{Addresses-snt}{Section@tie @char65.4.4}
+@xrdef{Identifiers-pg}{125}
+@xrdef{Quoted Constructs-pg}{125}
+@xrdef{Addresses-pg}{125}
+@xrdef{Indices-title}{Indices}
+@xrdef{Indices-snt}{}
+@xrdef{Concept Index-title}{Concept Index}
+@xrdef{Concept Index-snt}{}
+@xrdef{Indices-pg}{127}
+@xrdef{Concept Index-pg}{127}
+@xrdef{Index of Functions and Macros-title}{Index of Functions and Macros}
+@xrdef{Index of Functions and Macros-snt}{}
+@xrdef{Index of Variables-title}{Index of Variables}
+@xrdef{Index of Variables-snt}{}
+@xrdef{Index of Data Types-title}{Index of Data Types}
+@xrdef{Index of Data Types-snt}{}
+@xrdef{Index of Functions and Macros-pg}{131}
+@xrdef{Index of Variables-pg}{131}
+@xrdef{Index of Hooks-title}{Index of Hooks}
+@xrdef{Index of Hooks-snt}{}
+@xrdef{Index of Scanner Options-title}{Index of Scanner Options}
+@xrdef{Index of Scanner Options-snt}{}
+@xrdef{Index of Data Types-pg}{132}
+@xrdef{Index of Hooks-pg}{132}
+@xrdef{Index of Scanner Options-pg}{132}
